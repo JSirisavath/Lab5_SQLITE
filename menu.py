@@ -12,7 +12,7 @@ db = 'lab5_record_holder_db.db'
 def create_table():
     with sqlite3.connect(db) as conn:
 
-        conn.execute('DROP TABLE IF EXISTS chainsaws_juggling_record_holders')
+        # conn.execute('DROP TABLE IF EXISTS chainsaws_juggling_record_holders')
         conn.execute(
             'CREATE TABLE IF NOT EXISTS chainsaws_juggling_record_holders (ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,name text UNIQUE, Country text, Number_of_catches int )')
 
